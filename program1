@@ -1,0 +1,30 @@
+package com.javatpoint;  
+import java.net.*;   
+import java.util.Scanner;
+public class URLExample {   
+    public static void main(String[] args){    
+        Scanner dRequest = new Scanner(System.in); 
+        System.out.println("Enter District Number");
+        String userInput = dRequest.nextLine();
+    try{    
+    URL url=new URL("https://www.scstatehouse.gov/member.php%3Fchamber=H");    
+    System.out.println(" District 25 Statistics "); 
+     
+    }  
+    catch(Exception e)  
+    {  
+        System.out.println(e);}    
+    }    
+ LineNumberReader lineNumberReader = 
+    new LineNumberReader(new FileReader("https://www.scstatehouse.gov/member.php%3Fchamber=H"));
+
+int data = lineNumberReader.read();
+while(data != -1){
+    char dataChar = (char) data;
+    data = lineNumberReader.read();
+    int lineNumber = lineNumberReader.getLineNumber();
+}
+lineNumberReader.close();
+System.out.println(lineNumber)
+System.out.pritnln(dataChar)
+    }  
